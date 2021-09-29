@@ -1,10 +1,4 @@
-# rock-paper-scissors
 
-![visitors](https://visitor-badge.glitch.me/badge?page_id=SouravJohar.visitor-badge)
-
-https://youtu.be/0uSA3xyXlwM 
-
-An AI to play the Rock Paper Scissors game
 
 ## Requirements
 - Python 3
@@ -15,7 +9,7 @@ An AI to play the Rock Paper Scissors game
 ## Set up instructions
 1. Clone the repo.
 ```sh
-$ git clone https://github.com/SouravJohar/rock-paper-scissors.git
+$ git clone 
 $ cd rock-paper-scissors
 ```
 
