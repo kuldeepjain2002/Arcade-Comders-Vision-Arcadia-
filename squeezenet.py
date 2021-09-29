@@ -134,17 +134,6 @@ def SqueezeNet(include_top=True, weights='imagenet',
         if K.backend() == 'theano':
             layer_utils.convert_all_kernels_in_model(model)
 
-        """if K.image_data_format() == 'channels_first':
-
-            if K.backend() == 'tensorflow':
-                warnings.warn('You are using the TensorFlow backend, yet you '
-                              'are using the Theano '
-                              'image data format convention '
-                              '(`image_data_format="channels_first"`). '
-                              'For best performance, set '
-                              '`image_data_format="channels_last"` in '
-                              'your Keras config '
-                              'at ~/.keras/keras.json.')"""
     return model
 
 
