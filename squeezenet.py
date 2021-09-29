@@ -45,8 +45,7 @@ def SqueezeNet(include_top=True, weights='imagenet',
                input_tensor=None, input_shape=None,
                pooling=None,
                classes=1000):
-    """Instantiates the SqueezeNet architecture.
-    """
+  
         
     if weights not in {'imagenet', None}:
         raise ValueError('The `weights` argument should be either '
@@ -91,8 +90,7 @@ def SqueezeNet(include_top=True, weights='imagenet',
     x = fire_module(x, fire_id=9, squeeze=64, expand=256)
     
     if include_top:
-        # It's not obvious where to cut the network... 
-        # Could do the 8th or 9th layer... some work recommends cutting earlier layers.
+        
     
         x = Dropout(0.5, name='drop9')(x)
 
@@ -113,7 +111,6 @@ def SqueezeNet(include_top=True, weights='imagenet',
     # Ensure that the model takes into account
     # any potential predecessors of `input_tensor`.
     if input_tensor is not None:
-        inputs = get_source_inputs(input_tensor)
     else:
         inputs = img_input
 
