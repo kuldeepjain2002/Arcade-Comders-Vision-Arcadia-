@@ -9,7 +9,7 @@
 ## Set up instructions
 1. Clone the repo.
 ```sh
-$ git clone 
+$ git clone https://github.com/kuldeepjain2002/Arcade-Comders-Vision-Arcadia-.git
 $ cd rock-paper-scissors
 ```
 
